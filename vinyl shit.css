@@ -1,0 +1,34 @@
+                <div class="vinyl1">
+                    <img src="vinyl.png" class="vinyl2" alt="Vinyl record">
+                </div>
+
+
+
+
+                .vinyl1 {
+    position: relative;
+    right: -10px;
+    bottom: -130px;
+    transform: translateY(-50%); 
+    z-index: 1000;
+}
+
+.vinyl2 {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.vinyl2:hover {
+    animation: spin 2s linear infinite;
+}
