@@ -1,0 +1,137 @@
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pico-color-grey-850);
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+main {
+  margin-top: 80px;
+}
+
+body{
+    padding-top: 30px;
+}
+
+header h1{
+    color: var(--pico-color-grey-50);
+    font-style: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tabber{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--pico-color-grey-800);
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+.container-album {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--pico-color-grey-800);
+    max-width: 100%;
+    padding: 20px;
+}
+
+.container-album2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--pico-color-grey-800);
+    max-width: 100%;
+    padding: 20px;
+    justify-content: flex-end;
+}
+
+.container-album2 img {
+    order: 2;
+}
+
+.container-album2 h1 {
+    order: 1;
+    margin-top: 50px; 
+}
+
+.container-album2 p {
+    margin-top: 100px; 
+}
+
+h1, h2, h3 {
+  font-weight: 450;
+}
+
+.vinyl1{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.vinyl1:hover {
+    animation: spin 2s linear infinite;
+}
+
+@media (max-width: 768px) {
+
+  .container,
+  .container-album,
+  .container-album2 {
+    flex-direction: column;
+    text-align: center;
+}
+
+  .container-album2 img,
+  .container-album2 h1 {
+    order: unset;
+  }
+
+  .container-album2 h1,
+  .container-album2 p {
+    margin-top: 0;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .tabber {
+    padding-top: 40px;
+  }
+
+  .vinyl1 img{
+    width: 50%;
+  }
+
+}

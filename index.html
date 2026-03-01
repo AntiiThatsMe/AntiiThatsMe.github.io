@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DONDA LP TICKET SALE</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/pico.gray.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/colors.css">
+    </head>
+    <body>
+        <header>
+            <h1>DONDA</h1>
+        </header>
+        <main>
+            <section class="container">
+                <img src="kanye.png" alt="Kanye West (Ye)" style="width:auto;">
+                <h1>ABOUT THE ARTIST</h1>
+                <p>KANYE OMARI WEST (ALSO KNOWN AS YE) IS A RAPPER, PRODUCER AND DESIGNER. HE AHS BEEN LISTED AS ONE OF THE GREATS IN THE RAP GAME AND WAS A IMPORTANT FIGURE IN HIP-HOP. HE IS HOSTING LISTENING PARTIES FOR HIS NEWEST ALBUM DONDA, RELEASING IN AUGUST 29, 2021. GET TICKETS BELOW</p>
+            </section>
+            <h1 class="tabber">LOCATIONS</h1>
+            <section class="container-album">
+                <img src="donda.png" alt="" style="width:auto;">
+                <h1>DONDA LISTENING PARTY 1: LAS VEGAS</h1>
+                <p>KANYE IS HOSTING HIS FIRST DONDA LISTENING PARTY AT CHURCHLV IN LAS VEGAS. LASTS FROM 6:30-8:00. DOORS OPEN 6:10 </p>
+            </section>
+            <section class="container-album2">
+                <img src="donda.png" alt="" style="width:auto;">
+                <h1>DONDA LISTENING PARTY 2: ATLANTA 1</h1>
+                <p>KANYE IS HOSTING HIS SECOND DONDA LISTENING PARTY AT THE MERCEDEZ-BENZ STADIUM IN ATLANTA. LASTS FROM 6:30-8:00. DOORS OPEN 6:10 </p>
+            </section>
+            <section class="container-album">
+                <img src="donda.png" alt="" style="width:auto;">
+                <h1>DONDA LISTENING PARTY 3: ATLANTA 2</h1>
+                <p>KANYE IS HOSTING HIS THIRD DONDA LISTENING PARTY AT THE MERCEDEZ-BENZ STADIUM IN ATLANTA. LASTS FROM 6:30-8:00. DOORS OPEN 6:10 </p>
+            </section>
+            <section class="container-album2">
+                <img src="donda.png" alt="" style="width:auto;">
+                <h1>DONDA LISTENING PARTY 4: CHICAGO</h1>
+                <p>KANYE IS HOSTING HIS FINAL DONDA LISTENING PARTY AT SOLDIER FIELD IN CHICAGO. LASTS FROM 6:30-9:00. DOORS OPEN 6:10 </p>
+            </section>
+        <article>
+        <form>
+            <fieldset class="grid">
+                <legend>TICKET SALE</legend>
+
+                <label>
+                    FULL NAME:
+                    <input
+                        type="name"
+                        name="name"
+                        required
+                    />
+                </label>
+                <label>
+                    EMAIL:
+                    <input
+                        type="email"
+                        name="email"
+                        required
+                    />
+                </label>
+                <label>
+                    BIRTHDAY:
+                    <input type="date" value="", required>
+                </label>
+            </fieldset>
+            <fieldset class="grid">
+                <label>
+                    LOCATION
+                    <select name="location" required>
+                    <option value="" disabled selected>Select location</option>
+                    <option value="Las Vegas">Las Vegas</option>
+                    <option value="Atlanta 1">Atlanta 1</option>
+                    <option value="Atlanta 2">Atlanta 2</option>
+                    <option value="Chicago">Chicago</option>
+                </select>
+                </label>
+                <label>
+                    TICKET TYPE
+                    <select name="ticketType" required>
+                        <option value="" disabled selected>Select ticket type</option>
+                        <option value="Regular">Regular</option>
+                        <option value="VIP">VIP</option>
+                    </select>
+                </label>
+            </fieldset>
+            <input type="submit" value="PROCEED TO CHECKOUT" class="animate__shakeX" required>
+        </form>
+        </article>
+        <article>
+        <form>
+            <fieldset class="grid">
+                <legend>CONTACT</legend>
+
+                <label>
+                    FULL NAME:
+                    <input
+                        type="name"
+                        name="name"
+                        required
+                    />
+                </label>
+                <label>
+                    EMAIL:
+                    <input
+                        type="email"
+                        name="email"
+                        required
+                    />
+                </label>
+             </fieldset>
+            <fieldset class="grid">
+                <label>
+                    MESSAGE
+                    <textarea name="skilabod" placeholder="Skilaboð" rows="10" cols="50"></textarea>
+                </label>
+            </fieldset>
+             <input type="submit" value="SUBMIT" class="animate__shakeX" required>
+        </form>
+        </article>
+        <div class="vinyl1">
+            <img src="vinyl.png" class="vinyl2" alt="Vinyl record">
+        </div>
+        </main>
+        <audio id="dondaPreview" src="hurricane.mp3"></audio>
+        <script src="js/audio.js"></script>
+    </body>
+</html>
